@@ -22,6 +22,15 @@
                     <label>Enable extension</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
+                <field id="is_test"
+                       translate="label"
+                       type="select"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1" sortOrder="10">
+                    <label>Test mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
                 <field id="send_data_to_kiyoh"
                        translate="label"
                        type="select"

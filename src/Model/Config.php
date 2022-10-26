@@ -34,6 +34,15 @@ class Config
         );
     }
 
+    public function isEntest(int $storeId = null): bool
+    {
+        return $this->scopeConfig->isSetFlag(
+            'kiyoh_settings/general/is_test',
+            ScopeInterface::SCOPE_STORE,
+            $storeId
+        );
+    }
+
     public function sendDataToKiyoh(int $storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(

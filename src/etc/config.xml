@@ -4,6 +4,7 @@
         <kiyoh_settings>
             <general>
                 <enable />
+                <is_test />
                 <send_data_to_kiyoh />
                 <email />
                 <api_key />

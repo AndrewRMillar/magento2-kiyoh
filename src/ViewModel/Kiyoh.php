@@ -79,4 +79,10 @@ class Kiyoh implements ArgumentInterface
     {
         return $this->config->isEnabled();
     }
+
+    public function isTest(): bool
+    {
+        return $this->config->isTest();
+    }
+
 }
